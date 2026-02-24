@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
@@ -12,9 +13,15 @@ type Props = Readonly<{ children: React.ReactNode }>;
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="es-AR">
-      <body className={cn(inter.variable, "antialiased")}>
+      <body
+        className={cn(
+          inter.variable,
+          "grid min-h-screen grid-rows-[auto_1fr_auto] bg-background text-foreground antialiased",
+        )}
+      >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
