@@ -6,5 +6,7 @@
   "printWidth": 80,
   "semi": true,
   "singleQuote": false,
+  "tailwindFunctions": ["cva"],
+  "tailwindStylesheet": "./src/app/globals.css",
   "trailingComma": "all"
 }
