@@ -6,7 +6,11 @@ type Props = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export function Brand({ className, ...props }: Props) {
   return (
-    <Link href="/" className={cn("inline-block w-auto", className)} {...props}>
+    <Link
+      href="#inicio"
+      className={cn("inline-block w-auto", className)}
+      {...props}
+    >
       <svg
         viewBox="0 0 400 110.67"
         className="h-9 w-auto rounded bg-white fill-primary md:h-12"

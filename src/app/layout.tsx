@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
+import { Header } from "@/components/header";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Props) {
           "grid min-h-screen grid-rows-[auto_1fr_auto] bg-background text-foreground antialiased",
         )}
       >
-        <Navbar />
+        <Header />
         {children}
         <Footer />
       </body>
