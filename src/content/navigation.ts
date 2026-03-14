@@ -6,14 +6,26 @@ type NavigationItem = {
 export const navigation: NavigationItem[] = [
   {
     title: "Inicio",
-    href: "/",
+    href: "#inicio",
   },
   {
     title: "Servicios",
-    href: "/servicios",
+    href: "#servicios",
+  },
+  {
+    title: "Nosotros",
+    href: "#nosotros",
+  },
+  {
+    title: "Opiniones",
+    href: "#opiniones",
+  },
+  {
+    title: "FAQ",
+    href: "#faq",
   },
   {
     title: "Contacto",
-    href: "/contacto",
+    href: "#contacto",
   },
 ];
