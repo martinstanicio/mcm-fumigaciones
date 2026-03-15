@@ -1,25 +1,60 @@
 import { Brand } from "./brand";
-import { SocialIcons } from "./social-icons";
+import { OpenHours } from "./open-hours";
+import { Separator } from "./ui/separator";
+import { formattedPhone, phone } from "@/content/contact-info";
 import { siteName } from "@/content/metadata";
-import { cn } from "@/lib/utils";
+import { getWhatsAppLink } from "@/lib/whatsapp";
+import { IconBrandWhatsapp, IconMapPin, IconPhone } from "@tabler/icons-react";
 import Link from "next/link";
 
-type Props = React.ComponentPropsWithoutRef<"footer">;
-
-export function Footer({ className, ...props }: Props) {
+export function Footer() {
   return (
-    <footer
-      className={cn("dark bg-background text-foreground", className)}
-      {...props}
-    >
-      <div className="mx-auto max-w-4xl space-y-12 px-4 py-8">
-        <div className="flex flex-col items-center justify-between gap-x-4 gap-y-12 sm:flex-row">
-          <Brand />
-          <SocialIcons />
+    <footer className="dark bg-background text-foreground">
+      <div className="container mx-auto space-y-6 p-4 py-24 xl:max-w-7xl">
+        <div className="grid gap-12 md:grid-cols-2">
+          <div className="space-y-6">
+            <Brand />
+            <p className="max-w-md leading-relaxed text-muted-foreground">
+              Empresa familiar dedicada al control de plagas desde 2018.
+              Ofrecemos soluciones efectivas y seguras para hogares y comercios
+              en todo el Partido de Escobar.
+            </p>
+
+            <ul className="space-y-3">
+              <Link
+                href={getWhatsAppLink(phone).toString()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-muted-foreground"
+              >
+                <IconBrandWhatsapp />
+                <span>WhatsApp</span>
+              </Link>
+              <Link
+                href={`tel:${phone}`}
+                className="flex items-center gap-3 text-muted-foreground"
+              >
+                <IconPhone />
+                <span>{formattedPhone}</span>
+              </Link>
+              <p className="flex items-center gap-3 text-muted-foreground">
+                <IconMapPin />
+                <span>Partido de Escobar, Buenos Aires</span>
+              </p>
+            </ul>
+          </div>
+
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold">Horario de Atención</h2>
+            <OpenHours />
+          </div>
         </div>
-        <div className="flex flex-col justify-between gap-4 text-center sm:flex-row">
+
+        <Separator />
+
+        <div className="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row">
           <p>
-            {siteName} &copy; {new Date().getFullYear()}
+            &copy; {new Date().getFullYear()} {siteName}.
           </p>
           <p>
             Página web diseñada por{" "}
