@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
 import { FAQ } from "@/components/faq";
 import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <About />
       <Testimonials />
       <FAQ />
+      <Contact />
     </div>
   );
 }
