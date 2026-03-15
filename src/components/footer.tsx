@@ -1,7 +1,7 @@
 import { Brand } from "./brand";
 import { OpenHours } from "./open-hours";
 import { Separator } from "./ui/separator";
-import { formattedPhone, phone } from "@/content/contact-info";
+import { phone, simplerFormattedPhone } from "@/content/contact-info";
 import { siteName } from "@/content/metadata";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { IconBrandWhatsapp, IconMapPin, IconPhone } from "@tabler/icons-react";
@@ -35,7 +35,7 @@ export function Footer() {
                 className="flex items-center gap-3 text-muted-foreground"
               >
                 <IconPhone />
-                <span>{formattedPhone}</span>
+                <span>{simplerFormattedPhone}</span>
               </Link>
               <p className="flex items-center gap-3 text-muted-foreground">
                 <IconMapPin />
