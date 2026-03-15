@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-border bg-background">
-      <nav className="container mx-auto flex max-w-7xl items-center justify-between p-4 xl:max-w-7xl">
+      <nav className="container mx-auto flex items-center justify-between p-4 xl:max-w-7xl">
         <Brand />
 
         <div className="lg:hidden">
