@@ -13,7 +13,9 @@ import {
   IconBug,
   IconBuilding,
   IconBuildingWarehouse,
+  IconCashBanknote,
   IconCheese,
+  IconCreditCard,
   IconHome,
   IconLeaf,
 } from "@tabler/icons-react";
@@ -78,6 +80,19 @@ const plagues = [
   "Roedores",
 ];
 
+const paymentMethods = [
+  {
+    icon: IconCashBanknote,
+    title: "Efectivo",
+    description: "Pagá en el momento del servicio",
+  },
+  {
+    icon: IconCreditCard,
+    title: "Transferencia",
+    description: "Transferencia bancaria",
+  },
+];
+
 export function Services() {
   return (
     <section id="servicios" className="bg-secondary">
@@ -136,13 +151,28 @@ export function Services() {
           <h3 className="text-center text-xl font-semibold">
             Plagas que Tratamos
           </h3>
-          <ul className="mx-auto flex max-w-3xl flex-wrap justify-center gap-4">
+          <ul className="mx-auto flex max-w-2xl flex-wrap justify-center gap-2">
             {plagues.map((plague) => (
               <li
                 key={plague}
-                className="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-card-foreground"
+                className="rounded-full border border-border bg-card px-4 py-2 text-center text-sm font-medium text-card-foreground max-sm:grow"
               >
                 {plague}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h3 className="text-center text-xl font-semibold">Medios de Pago</h3>
+          <ul className="mx-auto flex max-w-3xl flex-wrap justify-center gap-2">
+            {paymentMethods.map((method) => (
+              <li
+                key={method.title}
+                className="flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-center text-sm font-medium text-card-foreground"
+              >
+                <method.icon className="text-primary" />
+                <span>{method.title}</span>
               </li>
             ))}
           </ul>
