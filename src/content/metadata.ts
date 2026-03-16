@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    title,
+    title: `${title} | ${siteName}`,
     description,
     siteName,
     locale: "es_AR",
