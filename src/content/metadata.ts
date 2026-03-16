@@ -1,9 +1,22 @@
+import { plagues } from "./plagues";
 import type { Metadata, Viewport } from "next";
 
 export const siteName = "MCM Fumigaciones";
-export const title = "";
-export const description = "";
-export const keywords = [siteName];
+export const title = "Protegemos tu hogar y negocio de plagas";
+export const description =
+  "Empresa familiar especializada en control de plagas en hogares y comercios. Eliminamos cucarachas, hormigas, roedores y más.";
+export const keywords = [
+  siteName,
+  ...plagues,
+  "control de plagas",
+  "fumigaciones",
+  "eliminación de plagas",
+  "servicios de fumigación",
+  "fumigación de comercios",
+  "fumigación de hogares",
+  "escobar",
+  "buenos aires",
+];
 export const url = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? new URL(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`)
   : undefined;
@@ -20,7 +33,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    title: `${title} | ${siteName}`,
+    title,
     description,
     siteName,
     locale: "es_AR",

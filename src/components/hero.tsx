@@ -1,6 +1,7 @@
 import hero from "@/assets/hero.jpg";
 import { Button } from "@/components/ui/button";
 import { formattedPhone, phone } from "@/content/contact-info";
+import { description, title } from "@/content/metadata";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import {
   IconPhone,
@@ -32,12 +33,9 @@ export function Hero() {
             Control de plagas profesional
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-balance text-white sm:text-5xl lg:text-6xl">
-            Protegemos tu hogar y negocio de plagas
+            {title}
           </h1>
-          <p className="text-lg leading-relaxed text-gray-200">
-            Empresa familiar especializada en control de plagas en hogares y
-            comercios. Eliminamos cucarachas, hormigas, roedores y más.
-          </p>
+          <p className="text-lg leading-relaxed text-gray-200">{description}</p>
 
           <ul className="space-y-3">
             {features.map((feature) => (
