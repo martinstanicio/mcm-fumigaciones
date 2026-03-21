@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MCM Fumigaciones
 
-## Getting Started
+MCM Fumigaciones is a modern, responsive website for a professional pest control service company operating in Escobar and surrounding areas in Buenos Aires, Argentina. The site showcases comprehensive fumigation and pest control services for residential, commercial, and industrial clients.
 
-First, run the development server:
+## ✨ Features
+
+- **Service Showcase**: Display of pest control services with detailed descriptions
+- **Responsive Design**: Fully responsive across mobile, tablet, and desktop devices
+- **Client Testimonials**: Display of satisfied customer reviews and ratings
+- **FAQ Section**: Common questions about pest control services answered
+- **Contact Integration**: Direct messaging and WhatsApp integration for inquiries
+- **Business Hours**: Dynamic hour bar showing current service availability
+- **SEO Optimized**: Built with Next.js metadata and structured data for search engines
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 16+
+- pnpm (recommended)
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/martinstanicio/mcm-fumigaciones
+   cd mcm-fumigaciones
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Set up environment variables** (optional for development)
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   No need to set [VERCEL_PROJECT_PRODUCTION_URL](https://vercel.com/docs/environment-variables/system-environment-variables#VERCEL_PROJECT_PRODUCTION_URL) if deploying to Vercel.
+
+### Development
+
+Start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. The page auto-updates as you edit components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm build
+pnpm start
+```
 
-## Learn More
+### Code Quality
 
-To learn more about Next.js, take a look at the following resources:
+Lint and format code with ESLint and Prettier:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm lint
+pnpm format
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```text
+./
+├── src/
+│   ├── app/                   # Next.js app directory
+│   │   ├── globals.css        # Global styles and shadcn/ui theming
+│   │   ├── layout.tsx         # Root layout component
+│   │   ├── page.tsx           # Main page component
+│   │   └── ...                # Other Next.js files (icons)
+│   ├── assets/                # Static assets like images
+│   │   └── ....
+│   ├── components/            # Reusable React components
+│   │   ├── ui/                # shadcn/ui components
+│   │   │   └── ....
+│   │   └── ...
+│   ├── content/               # Static content and data files
+│   │   ├── metadata.ts        # SEO metadata
+│   │   ├── navigation.ts      # Navigation links used in the header
+│   │   └── ...
+│   └── lib/                   # Utility functions and helpers
+│       └── ...
+├── .env.example               # Example environment variables file
+├── .env.local                 # Local environment variables (not committed)
+├── .prettierrc.json           # Prettier configuration
+├── README.md                  # Project documentation
+├── components.json            # shadcn/ui component configuration
+├── eslint.config.mjs          # ESLint configuration
+├── package.json               # Project dependencies and scripts
+└── ...
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: [Next.js 16](https://nextjs.org/) - React framework with SSR and static generation
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- **Styling**: [TailwindCSS 4](https://tailwindcss.com/) - Utility-first CSS
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) - Accessible React components built with Tailwind
+- **Icons**: [Tabler Icons](https://tabler.io/icons) - React icon library
+- **Analytics**: [Vercel Analytics](https://vercel.com/analytics) - Website traffic insights
+- **Code Quality**: [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) - Formatting and linting
+- **Package Manager**: [pnpm](https://pnpm.io/) - Fast and efficient dependency management
+
+## 📝 Content Management
+
+Service and content information is centralized in `src/content/` files for easy updates:
+
+- **Services**: Add or modify pest control services in `services.ts`
+- **FAQs**: Update common questions in `faqs.ts`
+- **Contact Info**: Edit contact information in `contact-info.ts`
+- **Hours**: Modify business hours in `schedule.ts`
+- **SEO**: Update metadata like title and keywords in `metadata.ts`
+
+## 🌐 Deployment
+
+The project is optimized for deployment on [Vercel](https://vercel.com/):
+
+```bash
+vercel deploy
+```
+
+Alternatively, build and deploy to any Node.js hosting:
+
+```bash
+pnpm build
+pnpm start
+```
