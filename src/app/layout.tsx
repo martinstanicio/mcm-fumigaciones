@@ -2,6 +2,7 @@ import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter } from "next/font/google";
 
 export { metadata, viewport } from "@/content/metadata";
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: Props) {
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
