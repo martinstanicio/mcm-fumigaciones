@@ -12,6 +12,7 @@ import { paymentMethods } from "@/content/payment-methods";
 import { plagues } from "@/content/plagues";
 import { services } from "@/content/services";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { IconMessage } from "@tabler/icons-react";
 import Link from "next/link";
 
 export function Services() {
@@ -51,7 +52,11 @@ export function Services() {
                 </CardDescription>
               </CardHeader>
               <CardFooter className="mt-auto">
-                <Button asChild variant="outline" className="w-full">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="flex w-full items-center justify-center gap-2"
+                >
                   <Link
                     href={getWhatsAppLink(
                       phone,
@@ -60,6 +65,7 @@ export function Services() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <IconMessage />
                     Consultar
                   </Link>
                 </Button>

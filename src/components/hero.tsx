@@ -1,12 +1,10 @@
 import hero from "@/assets/hero.jpg";
 import { Button } from "@/components/ui/button";
-import { formattedPhone, phone } from "@/content/contact-info";
 import { description, title } from "@/content/metadata";
-import { getWhatsAppLink } from "@/lib/whatsapp";
 import {
-  IconPhone,
-  IconMessageCircle,
+  IconMessageCircleDollar,
   IconCircleCheck,
+  IconBug,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,21 +47,20 @@ export function Hero() {
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button size="lg" asChild>
               <Link
-                href={getWhatsAppLink(
-                  phone,
-                  "Hola, estoy interesado en sus servicios de fumigación. ¿Podrían brindarme más información?",
-                ).toString()}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contacto"
+                className="flex items-center justify-center gap-2"
               >
-                <IconMessageCircle />
+                <IconMessageCircleDollar />
                 <span>¡Pedí tu presupuesto!</span>
               </Link>
             </Button>
             <Button size="lg" variant="glass" asChild>
-              <Link href={`tel:+${phone}`}>
-                <IconPhone />
-                <span>{formattedPhone}</span>
+              <Link
+                href="#servicios"
+                className="flex items-center justify-center gap-2"
+              >
+                <IconBug />
+                <span>Nuestros servicios</span>
               </Link>
             </Button>
           </div>

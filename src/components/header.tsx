@@ -2,9 +2,8 @@
 
 import { Brand } from "./brand";
 import { Button } from "@/components/ui/button";
-import { phone } from "@/content/contact-info";
 import { navigation } from "@/content/navigation";
-import { IconMenu2, IconPhone, IconX } from "@tabler/icons-react";
+import { IconMenu2, IconMessageCircleDollar, IconX } from "@tabler/icons-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -46,11 +45,11 @@ export function Header() {
 
         <Button asChild className="max-lg:hidden">
           <Link
-            href={`tel:${phone}`}
+            href="#contacto"
             className="flex items-center justify-center gap-2"
           >
-            <IconPhone />
-            <span>Llamar Ahora</span>
+            <IconMessageCircleDollar />
+            <span>¡Pedí tu presupuesto!</span>
           </Link>
         </Button>
       </nav>
@@ -73,11 +72,11 @@ export function Header() {
 
             <Button asChild className="mt-4 w-full">
               <Link
-                href={`tel:${phone}`}
+                href="#contacto"
                 className="flex items-center justify-center gap-2"
               >
-                <IconPhone />
-                <span>Llamar Ahora</span>
+                <IconMessageCircleDollar />
+                <span>¡Pedí tu presupuesto!</span>
               </Link>
             </Button>
           </div>
