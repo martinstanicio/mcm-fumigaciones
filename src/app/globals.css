@@ -129,4 +129,13 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  #inicio,
+  #servicios,
+  #nosotros,
+  #opiniones,
+  #faq,
+  #contacto {
+    @apply scroll-mt-20;
+  }
 }
