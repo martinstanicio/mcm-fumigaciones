@@ -26,9 +26,9 @@ export function Services() {
             Soluciones completas para el control de plagas
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Ofrecemos servicios de fumigación para comercios y domicilios en
-            todo el Partido de Escobar. También realizamos trabajos en otras
-            zonas con costo de traslado.
+            Brindamos servicios de fumigación con productos certificados por
+            ANMAT y SENASA, utilizando la metodología de Manejo Integrado de
+            Plagas (MIP).
           </p>
         </div>
 

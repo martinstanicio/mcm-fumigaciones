@@ -7,7 +7,7 @@ export const faqs: FAQ[] = [
   {
     question: "¿Es segura la fumigación para mi familia y mascotas?",
     answer:
-      "Sí, utilizamos productos certificados y aprobados por organismos sanitarios que son seguros para personas y mascotas cuando se siguen las indicaciones. Recomendamos ventilar el ambiente después del tratamiento y mantener alejados a niños y mascotas durante el tiempo indicado (generalmente 2-4 horas).",
+      "Sí, todos nuestros productos están debidamente habilitados por ANMAT y SENASA. Utilizamos el Manejo Integrado de Plagas (MIP) que busca minimizar el impacto al medio ambiente. Recomendamos ventilar el ambiente después del tratamiento y seguir las indicaciones específicas de cada servicio.",
   },
   {
     question: "¿Cuánto tiempo dura el efecto de la fumigación?",
@@ -25,9 +25,9 @@ export const faqs: FAQ[] = [
       "Sí, todos nuestros servicios incluyen garantía. Si el problema persiste después del tratamiento, realizamos aplicaciones adicionales sin costo. La duración de la garantía varía según el servicio.",
   },
   {
-    question: "¿En qué zonas trabajan?",
+    question: "¿En qué zonas y lugares trabajan?",
     answer:
-      "Trabajamos en comercios y domicilios en todo el Partido de Escobar. También realizamos trabajos en domicilios y galpones en otras zonas (sin certificado), con un costo adicional de traslado.",
+      "Trabajamos en comercios, oficinas, fábricas, locales, viviendas, barrios privados, canchas de fútbol y clubes de campo. Nuestra zona principal de cobertura es el Partido de Escobar, pero también realizamos trabajos en otras zonas con costo de traslado adicional.",
   },
   {
     question: "¿Cuál es el horario de atención?",
@@ -35,9 +35,9 @@ export const faqs: FAQ[] = [
       "Nuestro horario de atención es de lunes a viernes de 8:00 a 21:00 horas, y los sábados de 8:00 a 12:00 horas.",
   },
   {
-    question: "¿Emiten certificados de fumigación?",
+    question: "¿Están habilitados oficialmente?",
     answer:
-      "Sí, emitimos certificados de fumigación para comercios en el Partido de Escobar. Para trabajos fuera de esta zona (galpones, domicilios), el servicio se realiza sin certificado.",
+      "Sí, la empresa se encuentra habilitada por el Ministerio de Asuntos Agrarios bajo el Nº 5117 (Exp. Escobar Nº 211283). Todos nuestros productos están certificados por ANMAT y SENASA.",
   },
   {
     question: "¿Qué métodos de pago aceptan?",
@@ -46,6 +46,6 @@ export const faqs: FAQ[] = [
   {
     question: "¿Qué plagas tratan?",
     answer:
-      "Tratamos todo tipo de plagas: hormigas invasoras, hormigas podadoras, cucarachas, moscas, mosquitos, moscardones, chinches de cama, pulgas, escorpiones, tábanos, roedores, entre otras.",
+      "Tratamos las plagas más comunes: cucarachas, hormigas invasoras y de jardín, moscas, mosquitos, moscardones, chinches de cama, pulgas, escorpiones, tábanos, roedores, entre otras. También realizamos desinfecciones efectivas contra agentes bacterianos, virales y fúngicos.",
   },
 ];

@@ -1,7 +1,7 @@
 export const plagues = [
-  "Hormigas invasoras",
-  "Hormigas podadoras",
   "Cucarachas",
+  "Hormigas invasoras",
+  "Hormigas de jardín",
   "Moscas",
   "Mosquitos",
   "Moscardones",

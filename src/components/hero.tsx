@@ -12,9 +12,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const features = [
-  "Productos certificados y seguros",
-  "Garantía de satisfacción",
-  "Cobertura en todo el Partido de Escobar",
+  "Productos habilitados por ANMAT y SENASA",
+  "Empresa habilitada por el Ministerio de Asuntos Agrarios",
+  "Cobertura en todo el Partido de Escobar y alrededores",
 ];
 
 export function Hero() {
@@ -30,7 +30,7 @@ export function Hero() {
       <div className="container mx-auto px-4 py-24 lg:py-32 xl:max-w-7xl">
         <div className="max-w-2xl space-y-6">
           <p className="text-sm font-semibold tracking-wider text-primary uppercase">
-            Control de plagas profesional
+            Manejo Integrado de Plagas
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-balance text-white sm:text-5xl lg:text-6xl">
             {title}

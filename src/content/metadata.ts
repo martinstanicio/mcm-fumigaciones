@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from "next";
 export const siteName = "MCM Fumigaciones";
 export const title = "Protegemos tu hogar y negocio de plagas";
 export const description =
-  "Empresa familiar especializada en control de plagas en hogares y comercios. Eliminamos cucarachas, hormigas, roedores y más.";
+  "Especialistas en control de plagas para comercios, oficinas, fábricas, viviendas, barrios privados, clubes de campo y más.";
 export const keywords = [
   siteName,
   ...plagues,

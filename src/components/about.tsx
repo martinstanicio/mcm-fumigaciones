@@ -1,39 +1,43 @@
 import { Card, CardContent } from "./ui/card";
+import { siteName } from "@/content/metadata";
 import {
   IconAward,
-  IconBug,
-  IconBuilding,
   IconClock,
-  IconHome,
+  IconDroplets,
   IconShieldCheck,
+  IconSpray,
   IconUsers,
+  IconUserShield,
 } from "@tabler/icons-react";
 
 const stats = [
-  { icon: IconClock, value: "7+", label: "Años de experiencia" },
+  {
+    icon: IconClock,
+    value: `${new Date().getFullYear() - 2018}+`,
+    label: "Años de experiencia",
+  },
   { icon: IconUsers, value: "500+", label: "Clientes satisfechos" },
-  { icon: IconAward, value: "100%", label: "Compromiso" },
-  { icon: IconShieldCheck, value: "Escobar", label: "Zona de Cobertura" },
+  { icon: IconAward, value: "5117", label: "Habilitación N°" },
+  { icon: IconShieldCheck, value: "ANMAT", label: "Productos certificados" },
 ];
 
 const features = [
   {
-    icon: IconBug,
-    title: "Control integral de plagas",
+    icon: IconDroplets,
+    title: "Nebulizaciones",
     description:
-      "Hormigas, cucarachas, moscas, mosquitos, chinches, pulgas, escorpiones, roedores y más.",
+      "Aplicación de micro gotas frías o calientes para mayor cobertura en ambientes cerrados y abiertos.",
   },
   {
-    icon: IconHome,
-    title: "Servicio residencial",
+    icon: IconSpray,
+    title: "Desinfección",
     description:
-      "Fumigación completa para hogares, con productos seguros para tu familia y mascotas.",
+      "Productos efectivos contra agentes bacterianos, virales y fúngicos. Ideal para colegios, gimnasios, clínicas, oficinas y vestuarios.",
   },
   {
-    icon: IconBuilding,
-    title: "Servicio comercial",
-    description:
-      "Atención a comercios, restaurantes y galpones en todo el Partido de Escobar.",
+    icon: IconUserShield,
+    title: "Servicios adicionales",
+    description: "Sanidad vegetal y asesoramiento técnico profesional.",
   },
 ];
 
@@ -67,23 +71,29 @@ export function About() {
         <div className="grid items-start gap-16 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Comenzamos nuestra actividad en el año{" "}
-              <strong className="text-foreground">2018</strong> como un
-              emprendimiento familiar, con la misión de ofrecer servicios de
-              control de plagas de alta calidad a precios accesibles para el
-              Partido de Escobar.
+              <strong className="text-foreground">{siteName}</strong> es una
+              empresa especializada en el control de plagas en comercios,
+              oficinas, fábricas, locales y viviendas. También brindamos
+              servicios en barrios privados, canchas de fútbol y clubes de
+              campo.
             </p>
             <p>
-              Somos una empresa familiar dedicada a brindar soluciones efectivas
-              contra todo tipo de plagas. Nos distinguimos por el{" "}
-              <strong className="text-foreground">trato personalizado</strong>,
-              la puntualidad y el uso de productos certificados que son seguros
-              para tu familia y mascotas.
+              Utilizamos el{" "}
+              <strong className="text-foreground">
+                Manejo Integrado de Plagas (MIP)
+              </strong>{" "}
+              como estrategia de control, que busca reducir o eliminar el uso de
+              insecticidas y minimizar el impacto al medio ambiente.
             </p>
             <p>
-              Trabajamos en comercios y domicilios, siempre con el compromiso de
-              dejar tu espacio libre de plagas. También realizamos trabajos en
-              galpones y otras zonas con costo de traslado.
+              Todos nuestros productos están debidamente habilitados por{" "}
+              <strong className="text-foreground">ANMAT</strong> y{" "}
+              <strong className="text-foreground">SENASA</strong>. La empresa se
+              encuentra habilitada por el{" "}
+              <strong className="text-foreground">
+                Ministerio de Asuntos Agrarios
+              </strong>{" "}
+              bajo el Nº 5117 (Exp. Escobar Nº 211283).
             </p>
           </div>
 

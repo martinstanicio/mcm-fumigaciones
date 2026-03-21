@@ -34,20 +34,20 @@ export const services = [
     title: "Fumigación Residencial",
     description:
       "Servicio completo para casas y departamentos. Eliminamos moscas, mosquitos, moscardones, pulgas, chinches de cama y más.",
-    popular: true,
+    popular: false,
   },
   {
     icon: IconBuilding,
     title: "Fumigación Comercial",
     description:
-      "Soluciones para restaurantes, locales y oficinas en todo el Partido de Escobar. Certificados disponibles.",
-    popular: false,
+      "Soluciones para comercios en todo el Partido de Escobar y zonas aledañas. Certificados disponibles.",
+    popular: true,
   },
   {
     icon: IconBuildingWarehouse,
     title: "Galpones y Depósitos",
     description:
-      "Fumigación de galpones y espacios industriales (sin certificado). Servicio disponible con costo de traslado.",
+      "Fumigación de galpones y espacios industriales. Servicio disponible con costo de traslado.",
     popular: false,
   },
 ];
