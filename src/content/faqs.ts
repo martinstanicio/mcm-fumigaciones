@@ -20,11 +20,6 @@ export const faqs: FAQ[] = [
       "Sí, recomendamos: guardar alimentos y utensilios de cocina, cubrir acuarios, retirar mascotas del lugar, tapar o alejar plantas del área a tratar. Nuestro equipo le dará instrucciones específicas según el tratamiento.",
   },
   {
-    question: "¿Ofrecen garantía por el servicio?",
-    answer:
-      "Sí, todos nuestros servicios incluyen garantía. Si el problema persiste después del tratamiento, realizamos aplicaciones adicionales sin costo. La duración de la garantía varía según el servicio.",
-  },
-  {
     question: "¿En qué zonas y lugares trabajan?",
     answer:
       "Trabajamos en comercios, oficinas, fábricas, locales, viviendas, barrios privados, canchas de fútbol y clubes de campo. Nuestra zona principal de cobertura es el Partido de Escobar, pero también realizamos trabajos en otras zonas con costo de traslado adicional.",
