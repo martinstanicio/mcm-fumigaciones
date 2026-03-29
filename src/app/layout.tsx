@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { WhatsAppFAB } from "@/components/whatsapp-fab";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { Inter } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: Props) {
         <Header />
         {children}
         <Footer />
+        <WhatsAppFAB />
         <Analytics />
       </body>
     </html>
