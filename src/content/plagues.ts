@@ -8,6 +8,5 @@ export const plagues = [
   "Chinches de cama",
   "Pulgas",
   "Escorpiones",
-  "Tábanos",
   "Roedores",
 ];

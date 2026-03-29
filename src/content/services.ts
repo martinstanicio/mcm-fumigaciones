@@ -19,14 +19,14 @@ export const services = [
     icon: IconLeaf,
     title: "Control de Hormigas",
     description:
-      "Tratamiento especializado para hormigas invasoras y hormigas podadoras. Solución definitiva para jardines y hogares.",
+      "Tratamiento especializado para hormigas invasoras y hormigas podadoras. Solución para jardines y hogares.",
     popular: true,
   },
   {
     icon: IconCheese,
     title: "Desratización",
     description:
-      "Control integral de roedores con métodos seguros. Incluye sellado de accesos y seguimiento.",
+      "Control integral de roedores con métodos seguros. Incluye seguimiento.",
     popular: false,
   },
   {

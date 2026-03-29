@@ -24,7 +24,7 @@ export function Services() {
             Nuestros Servicios
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
-            Soluciones completas para el control de plagas
+            Soluciones para el control de plagas
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Brindamos servicios de fumigación con productos certificados por

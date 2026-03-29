@@ -41,6 +41,6 @@ export const faqs: FAQ[] = [
   {
     question: "¿Qué plagas tratan?",
     answer:
-      "Tratamos las plagas más comunes: cucarachas, hormigas invasoras y de jardín, moscas, mosquitos, moscardones, chinches de cama, pulgas, escorpiones, tábanos, roedores, entre otras. También realizamos desinfecciones efectivas contra agentes bacterianos, virales y fúngicos.",
+      "Tratamos las plagas más comunes: cucarachas, hormigas invasoras y de jardín, moscas, mosquitos, moscardones, chinches de cama, pulgas, escorpiones, roedores, entre otras. También realizamos desinfecciones efectivas contra agentes bacterianos, virales y fúngicos.",
   },
 ];
