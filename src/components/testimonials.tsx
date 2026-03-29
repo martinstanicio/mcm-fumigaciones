@@ -1,44 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { testimonials } from "@/content/testimonials";
 import { IconQuote, IconStar, IconStarFilled } from "@tabler/icons-react";
-
-const testimonials = [
-  {
-    name: "María González",
-    location: "Belén de Escobar",
-    text: "Excelente servicio. Llegaron puntual, fueron muy profesionales y el problema de cucarachas desapareció por completo. 100% recomendados.",
-    rating: 5,
-  },
-  {
-    name: "Carlos Fernández",
-    location: "Garín",
-    text: "Contraté el servicio de desratización y quedé muy conforme. Explicaron todo el proceso y dieron seguimiento. Muy buen precio.",
-    rating: 5,
-  },
-  {
-    name: "Laura Martínez",
-    location: "Dueña de comercio",
-    text: "Trabajamos con ellos hace años. Son responsables, puntuales y siempre cumplen. Los recomiendo para cualquier negocio.",
-    rating: 5,
-  },
-  {
-    name: "Roberto Sánchez",
-    location: "Maquinista Savio",
-    text: "Tenía un problema grave de hormigas en el jardín. Vinieron, evaluaron y en una sola aplicación solucionaron todo. Muy recomendable.",
-    rating: 5,
-  },
-  {
-    name: "Ana Paula Gómez",
-    location: "Ingeniero Maschwitz",
-    text: "Contraté para fumigación de pulgas por mis mascotas. Fueron muy cuidadosos y el tratamiento fue efectivo. Excelente atención.",
-    rating: 5,
-  },
-  {
-    name: "Diego Ramírez",
-    location: "Loma Verde",
-    text: "Rápidos, eficientes y con muy buen precio. Solucionaron el problema de mosquitos en mi patio. Totalmente recomendados.",
-    rating: 5,
-  },
-];
 
 export function Testimonials() {
   return (
@@ -78,15 +40,10 @@ export function Testimonials() {
                   {`"${testimonial.text}"`}
                 </p>
               </CardContent>
-              <CardFooter>
-                <div>
-                  <p className="font-semibold text-foreground">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.location}
-                  </p>
-                </div>
+              <CardFooter className="mt-auto">
+                <p className="font-semibold text-foreground">
+                  {testimonial.name}
+                </p>
               </CardFooter>
             </Card>
           ))}
