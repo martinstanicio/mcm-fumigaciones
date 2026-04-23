@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const features = [
   "Productos habilitados por ANMAT y SENASA",
-  "Empresa habilitada por el Ministerio de Asuntos Agrarios",
+  "Empresa habilitada por el Ministerio de Desarrollo Agrario",
   "Cobertura en todo el Partido de Escobar y alrededores",
 ];
 

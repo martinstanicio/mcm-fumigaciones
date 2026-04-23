@@ -91,7 +91,7 @@ export function About() {
               <strong className="text-foreground">SENASA</strong>. La empresa se
               encuentra habilitada por el{" "}
               <strong className="text-foreground">
-                Ministerio de Asuntos Agrarios
+                Ministerio de Desarrollo Agrario
               </strong>{" "}
               bajo el Nº 5117 (Exp. Escobar Nº 211283).
             </p>

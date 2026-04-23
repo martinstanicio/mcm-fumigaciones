@@ -32,7 +32,7 @@ export const faqs: FAQ[] = [
   {
     question: "¿Están habilitados oficialmente?",
     answer:
-      "Sí, la empresa se encuentra habilitada por el Ministerio de Asuntos Agrarios bajo el Nº 5117 (Exp. Escobar Nº 211283). Todos nuestros productos están certificados por ANMAT y SENASA.",
+      "Sí, la empresa se encuentra habilitada por el Ministerio de Desarrollo Agrario bajo el Nº 5117 (Exp. Escobar Nº 211283). Todos nuestros productos están certificados por ANMAT y SENASA.",
   },
   {
     question: "¿Qué métodos de pago aceptan?",
