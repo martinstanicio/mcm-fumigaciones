@@ -86,14 +86,19 @@ export function About() {
               insecticidas y minimizar el impacto al medio ambiente.
             </p>
             <p>
-              Todos nuestros productos están debidamente habilitados por{" "}
+              Nuestros productos están habilitados por{" "}
               <strong className="text-foreground">ANMAT</strong> y{" "}
-              <strong className="text-foreground">SENASA</strong>. La empresa se
-              encuentra habilitada por el{" "}
+              <strong className="text-foreground">SENASA</strong>, y la empresa
+              habilitada por el{" "}
               <strong className="text-foreground">
                 Ministerio de Desarrollo Agrario
               </strong>{" "}
-              bajo el Nº 5117 (Exp. Escobar Nº 211283).
+              bajo el Nº 5117 (Exp. Escobar Nº 211283), con el respaldo y
+              dirección técnica del{" "}
+              <strong className="text-foreground">
+                Ingeniero Agrónomo Agustín Weskamp
+              </strong>
+              .
             </p>
           </div>
 

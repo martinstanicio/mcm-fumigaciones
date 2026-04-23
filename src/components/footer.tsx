@@ -15,9 +15,11 @@ export function Footer() {
           <div className="space-y-6">
             <Brand />
             <p className="max-w-md leading-relaxed text-muted-foreground">
-              Empresa familiar dedicada al control de plagas desde 2018.
-              Ofrecemos soluciones efectivas y seguras para hogares y comercios
-              en todo el Partido de Escobar.
+              Empresa familiar dedicada al control de plagas desde 2018. Con
+              respaldo técnico del{" "}
+              <strong>Ingeniero Agrónomo Agustín Weskamp</strong>, ofrecemos
+              soluciones efectivas y seguras para hogares y comercios en todo el
+              Partido de Escobar.
             </p>
 
             <ul className="space-y-3">
