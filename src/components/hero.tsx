@@ -21,6 +21,8 @@ export function Hero() {
       <Image
         src={hero}
         alt=""
+        sizes="(min-width: 680px) 100vw, (min-width: 540px) calc(-6.67vw + 704px), calc(-77.27vw + 1070px)"
+        placeholder="blur"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-20"
         priority
       />
