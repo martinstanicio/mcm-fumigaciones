@@ -1,4 +1,7 @@
 import { Card, CardContent } from "./ui/card";
+import equipment from "@/assets/equipment.jpg";
+import people from "@/assets/people.jpg";
+import truck from "@/assets/truck.jpeg";
 import { siteName } from "@/content/metadata";
 import {
   IconAward,
@@ -9,6 +12,7 @@ import {
   IconUsers,
   IconUserShield,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 const stats = [
   {
@@ -19,6 +23,15 @@ const stats = [
   { icon: IconUsers, value: "500+", label: "Clientes satisfechos" },
   { icon: IconAward, value: "5117", label: "Habilitación N°" },
   { icon: IconShieldCheck, value: "ANMAT", label: "Productos certificados" },
+];
+
+const images = [
+  { alt: "Equipo de fumigación utilizado", staticImageData: equipment },
+  {
+    alt: "Personal con traje de apicultor y uniforme",
+    staticImageData: people,
+  },
+  { alt: "Vehículo de servicio", staticImageData: truck },
 ];
 
 const features = [
@@ -119,6 +132,19 @@ export function About() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {images.map((image, index) => (
+            <Image
+              key={index}
+              src={image.staticImageData}
+              alt={image.alt}
+              sizes="auto"
+              placeholder="blur"
+              className="aspect-video rounded-md object-cover object-center md:aspect-4/3"
+            />
+          ))}
         </div>
       </div>
     </section>
