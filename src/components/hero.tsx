@@ -20,7 +20,7 @@ export function Hero() {
     <section id="inicio" className="relative">
       <Image
         src={hero}
-        alt="Servicio profesional de fumigación"
+        alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-20"
         priority
       />
